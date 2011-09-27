@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Magnetix.TimeInterval
+namespace TimeInterval
 {
 	/// <summary>
 	/// ISO-8601 Duration only supports the format PnYnMnDTnHnMnS

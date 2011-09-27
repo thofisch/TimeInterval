@@ -1,4 +1,4 @@
-﻿namespace Magnetix.TimeInterval
+﻿namespace TimeInterval
 {
 	internal sealed class Designators
 	{

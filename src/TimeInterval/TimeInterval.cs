@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Magnetix.TimeInterval
+namespace TimeInterval
 {
 	/// <summary>
 	/// An ISO-8601 time intervals implementation.

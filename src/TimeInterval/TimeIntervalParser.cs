@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace Magnetix.TimeInterval
+namespace TimeInterval
 {
 	public class TimeIntervalParser
 	{

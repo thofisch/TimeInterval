@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeInterval", "src\TimeInterval\TimeInterval.csproj", "{A09FF9C2-E81C-408F-A5C7-F86AD33117DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeInterval.Tests", "src\TimeInterval.Tests\TimeInterval.Tests.csproj", "{FF436B8B-BFE3-46A5-AAAA-FFA82F627DB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{A09FF9C2-E81C-408F-A5C7-F86AD33117DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A09FF9C2-E81C-408F-A5C7-F86AD33117DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A09FF9C2-E81C-408F-A5C7-F86AD33117DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF436B8B-BFE3-46A5-AAAA-FFA82F627DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF436B8B-BFE3-46A5-AAAA-FFA82F627DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF436B8B-BFE3-46A5-AAAA-FFA82F627DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF436B8B-BFE3-46A5-AAAA-FFA82F627DB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
