@@ -13,11 +13,11 @@ namespace TimeInterval
 	{
 		private static readonly Regex PartPattern = new Regex(@"((?<value>([0-9]+(\.[0-9]+)?|\.[0-9]+))(?<designator>.))", RegexOptions.Compiled);
 
-		public Duration(double years, double months, double days) : this(years, months, days, 0, 0, 0)
+		public Duration(int years, int months, int days) : this(years, months, days, 0, 0, 0)
 		{
 		}
 
-		public Duration(double years, double months, double days, double hours, double minutes, double seconds)
+		public Duration(int years, int months, int days, int hours, int minutes, int seconds)
 		{
 			Years = years;
 			Months = months;
@@ -31,17 +31,12 @@ namespace TimeInterval
 		{
 		}
 
-		public double Years { get; set; }
-
-		public double Months { get; set; }
-
-		public double Days { get; set; }
-
-		public double Hours { get; set; }
-
-		public double Minutes { get; set; }
-
-		public double Seconds { get; set; }
+		public int Years { get; set; }
+		public int Months { get; set; }
+		public int Days { get; set; }
+		public int Hours { get; set; }
+		public int Minutes { get; set; }
+		public int Seconds { get; set; }
 
 		public static Duration Parse(string durationString)
 		{
@@ -134,22 +129,22 @@ namespace TimeInterval
 			return PartPattern
 				.Matches(partString)
 				.Cast<Match>()
-				.Select(m => new Part(double.Parse(m.Groups["value"].Value), m.Groups["designator"].Value));
+				.Select(m => new Part(int.Parse(m.Groups["value"].Value), m.Groups["designator"].Value));
 		}
 
 		#region Private Part Class
 		private class Part
 		{
-			private readonly double _value;
+			private readonly int _value;
 			private readonly string _designator;
 
-			public Part(double value, string designator)
+			public Part(int value, string designator)
 			{
 				_value = value;
 				_designator = designator;
 			}
 
-			public double Value
+			public int Value
 			{
 				get
 				{
