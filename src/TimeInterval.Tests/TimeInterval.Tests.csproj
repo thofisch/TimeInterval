@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DurationParserTests.cs" />
     <Compile Include="DurationTests.cs" />
     <Compile Include="OccuranceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
